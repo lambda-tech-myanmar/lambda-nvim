@@ -85,4 +85,8 @@ fun! HumanSize(bytes) abort
   return printf('%.1f%s', l:bytes, l:sizes[l:i])
 endfun
 
-
+augroup MyCocExplorer
+  autocmd!
+  autocmd VimEnter * sil! au! FileExplorer *
+  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
+augroup END

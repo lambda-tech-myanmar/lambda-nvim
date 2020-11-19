@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/tarzan'
 let g:netrw_dirhist_2='/home/tarzan/.config/nvim'
 let g:netrw_dirhist_1='/home/tarzan/.config'
 let g:netrw_dirhist_0='/home/tarzan/.config/gtk-4.0'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/home/tarzan/.config/nvim'
 let g:netrw_dirhist_6='/home/tarzan/Documents/python_trainning'
 let g:netrw_dirhist_5='/home/tarzan/.config/nvim/plugin_conf'
 let g:netrw_dirhist_4='/home/tarzan/Documents/heroku/django/whatsapp/whatsapp/main'
-let g:netrw_dirhist_3='/home/tarzan/Documents/heroku/django/whatsapp/whatsapp'
