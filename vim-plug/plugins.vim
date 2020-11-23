@@ -106,7 +106,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "" Python Bundle
 "    Plug 'zchee/deoplete-jedi'
     Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
-
+    
+    Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
     Plug 'tweekmonster/django-plus.vim', { 'for': ['python', 'htmldjango', 'html'] }
     " One filetype plugin to rule them all

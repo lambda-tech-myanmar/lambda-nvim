@@ -7,6 +7,7 @@ source $HOME/.config/nvim/general/path.vim
 "PLUGIN SETTING
 """""""""""""""""""""""""""""""""""""""""""""""
 source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plugin_conf/pymode_conf.vim
 source $HOME/.config/nvim/plugin_conf/coc_plugin.vim
 source $HOME/.config/nvim/plugin_conf/coc_settings.vim
 source $HOME/.config/nvim/plugin_conf/coc_settings_snippets.vim
