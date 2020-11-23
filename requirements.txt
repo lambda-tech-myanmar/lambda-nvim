@@ -1,0 +1,8 @@
+neovim-remote
+pylint
+neovim
+pynvim
+isort
+flake8
+python-language-server
+
