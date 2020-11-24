@@ -19,7 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "
     Plug 'Vimjas/vim-python-pep8-indent'
     "Coompletions
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'neoclide/coc.nvim', {'branch/': 'release'}
     "Syntax highlight
     Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
