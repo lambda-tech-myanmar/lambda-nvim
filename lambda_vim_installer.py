@@ -7,12 +7,13 @@ import sys
 def install_termux():
     try:
         os.system("pkg install ctags")
-        os.system("pip3 install -r $BASE_DIR/requirements.txt")
         os.system("npm install -g neovim")
         os.system("rm -rf ~/.config/nvim")
         os.system(
             "git clone https://github.com/lambda-tech-myanmar/lambda-nvim.git  ~/.config/nvim"
         )
+
+        os.system("pip3 install -r $BASE_DIR/requirements.txt")
         os.system("""
                   mkdir ~/linux_trainning
                   mkdir ~/python_programming
@@ -45,12 +46,13 @@ def install_linux():
         os.system("sudo apt-get install nodejs")
         os.system("sudo apt-get install npm")
         os.system("sudo apt-get install xclip xsel yank")
-        os.system("pip3 install -r {}/requirements.txt".format(BASE_DIR))
         os.system("sudo npm install -g neovim")
         os.system("rm -rf ~/.config/nvim")
         os.system(
             "git clone https://github.com/lambda-tech-myanmar/lambda-nvim.git  ~/.config/nvim"
         )
+
+        os.system("pip3 install -r {}/requirements.txt".format(BASE_DIR))
         os.system("""
                   mkdir ~/Desktop/linux_trainning
                   mkdir ~/Desktop/python_programming
