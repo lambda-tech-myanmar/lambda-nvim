@@ -12,7 +12,7 @@ source $HOME/.config/nvim/plugin_conf/coc_plugin.vim
 source $HOME/.config/nvim/plugin_conf/coc_settings.vim
 source $HOME/.config/nvim/plugin_conf/coc_settings_snippets.vim
 source $HOME/.config/nvim/plugin_conf/coc_settings_highlight.vim
-"source $HOME/.config/nvim/plugin_conf/ale_conf.vim
+source $HOME/.config/nvim/plugin_conf/session_conf.vim
 source $HOME/.config/nvim/plugin_conf/float_term.vim
 source $HOME/.config/nvim/plugin_conf/devicon.vim
 source $HOME/.config/nvim/plugin_conf/xtabline_conf.vim
@@ -26,4 +26,5 @@ source $HOME/.config/nvim/plugin_conf/rainbow_config.vim
 source $HOME/.config/nvim/plugin_conf/rnvimr.vim
 source  $HOME/.config/nvim/plugin_conf/vim_spector_conf.vim
 source $HOME/.config/nvim/plugin_conf/vim_fade_config.vim
+lua require'colorizer'.setup()
 "#lua require('plug-colorizer')

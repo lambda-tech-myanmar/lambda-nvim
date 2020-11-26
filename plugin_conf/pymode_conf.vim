@@ -26,7 +26,7 @@ let g:pymode_quickfix_maxheight = 6
 let g:pymode_python = 'python3'
 
 let g:pymode_indent = 1
-let g:pymode_folding = 1
+let g:pymode_folding = 0
 let g:pymode_doc = 1
 let g:pymode_doc_bind = 'K'
 """
