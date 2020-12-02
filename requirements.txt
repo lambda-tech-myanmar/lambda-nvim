@@ -5,4 +5,4 @@ pynvim
 isort
 flake8
 python-language-server
-
+jedi
