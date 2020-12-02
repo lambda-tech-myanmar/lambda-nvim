@@ -6,7 +6,7 @@ import sys
 
 def install_termux():
     try:
-        os.system("pkg install ctags > /dev/null 2>&1")
+        os.system("pkg install neovim ctags > /dev/null 2>&1")
         os.system("npm install -g neovim > /dev/null 2>&1")
         os.system("rm -rf ~/.config/nvim > /dev/null 2>&1")
         os.system(
@@ -43,7 +43,8 @@ def install_termux():
 def install_linux():
 
     try:
-        os.system("sudo apt-get install universal-ctags > /dev/null 2>&1")
+        os.system(
+            "sudo apt-get install neovim universal-ctags > /dev/null 2>&1")
         os.system("sudo apt-get install nodejs > /dev/null 2>&1")
         os.system("sudo apt-get install npm > /dev/null 2>&1")
         os.system("sudo apt-get install xclip xsel yank > /dev/null 2>&1")

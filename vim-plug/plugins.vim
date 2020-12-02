@@ -11,16 +11,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
-    "Plug 'scrooloose/NERDTree'
-    "Plug 'jistr/vim-nerdtree-tabs'
+    Plug 'scrooloose/NERDTree'
+    Plug 'jistr/vim-nerdtree-tabs'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     "FOR PYTHON
     "
     Plug 'Vimjas/vim-python-pep8-indent'
     "Coompletions
-    " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'neoclide/coc.nvim', {'branch/': 'release'}
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"    Plug 'neoclide/coc.nvim', {'branch/': 'release'}
     "Syntax highlight
     Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
     "ALE
@@ -45,7 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "finding
     Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
     Plug 'junegunn/fzf.vim' " needed for previews
-    Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+"    Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
 
     let g:make = 'gmake'
@@ -104,7 +104,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
 " python
 "" Python Bundle
-"    Plug 'zchee/deoplete-jedi'
+    Plug 'deoplete-plugins/deoplete-jedi'
     Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
     
     Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
