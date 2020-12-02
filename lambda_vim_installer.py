@@ -103,5 +103,5 @@ def choice():
 if __name__ == "__main__":
 
     print("LambdaVim Installer beta")
-    os.system("cat test.txxt")
+#    os.system("cat test.txxt")
     choice()
