@@ -8,6 +8,8 @@ source $HOME/.config/nvim/general/path.vim
 """""""""""""""""""""""""""""""""""""""""""""""
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/plugin_conf/deoplete_conf.vim
+"source $HOME/.config/nvim/plugin_conf/neosnippet_config.vim
+"source $HOME/.config/nvim/plugin_conf/deoppet_conf.vim
 source $HOME/.config/nvim/plugin_conf/pymode_conf.vim
 source $HOME/.config/nvim/plugin_conf/nerdtree_config.vim
 "source $HOME/.config/nvim/plugin_conf/coc_plugin.vim

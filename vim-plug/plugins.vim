@@ -64,10 +64,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     if v:version >= 704
       "" Snippets
-      Plug 'SirVer/ultisnips'
+      "Plug 'SirVer/ultisnips'
     endif
+    Plug 'MarcWeber/vim-addon-mw-utils'
+    Plug 'tomtom/tlib_vim'
+    Plug 'garbas/vim-snipmate'
 
+  " Optional:
     Plug 'honza/vim-snippets'
+    "Plug 'Shougo/neosnippet.vim'
+   " Plug 'Shougo/neosnippet-snippets'
+    "Plug 'honza/vim-snippets'
     Plug 'airblade/vim-rooter'
     "Dashboard
     "Plug 'glepnir/dashboard-nvim'
@@ -104,7 +111,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
 " python
 "" Python Bundle
+    Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'deoplete-plugins/deoplete-jedi'
+    if has('win32') || has('win64')
+        Plug 'tbodt/deoplete-tabnine', { 'do': 'powershell.exe .\install.ps1' }
+    else
+        Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+    endif
     Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
     
     Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }

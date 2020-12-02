@@ -6,32 +6,32 @@ import sys
 
 def install_termux():
     try:
-        os.system("pkg install neovim ctags > /dev/null 2>&1")
-        os.system("npm install -g neovim > /dev/null 2>&1")
-        os.system("rm -rf ~/.config/nvim > /dev/null 2>&1")
+        os.system("pkg install neovim ctags ")
+        os.system("npm install -g neovim ")
+        os.system("rm -rf ~/.config/nvim ")
         os.system(
-            "git clone https://github.com/lambda-tech-myanmar/lambda-nvim.git  ~/.config/nvim > /dev/null 2>&1"
+            "git clone https://github.com/lambda-tech-myanmar/lambda-nvim.git  ~/.config/nvim "
         )
 
         os.system(
-            "pip3 install -r $BASE_DIR/requirements.txt > /dev/null 2>&1")
+            "pip3 install -r $BASE_DIR/requirements.txt ")
         os.system("""
-                  mkdir ~/linux_trainning > /dev/null 2>&1
-                  mkdir ~/python_programming > /dev/null 2>&1
-                  mkdir ~/python_exercise > /dev/null 2>&1
-                  mkdir ~/linux_exercise > /dev/null 2>&1
-                  mkdir ~/tool_testing > /dev/null 2>&1
-                  mkdir ~/tmp > /dev/null 2>&1
+                  mkdir ~/linux_trainning 
+                  mkdir ~/python_programming 
+                  mkdir ~/python_exercise 
+                  mkdir ~/linux_exercise 
+                  mkdir ~/tool_testing 
+                  mkdir ~/tmp 
                   """)
         os.system(
-            """curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > /dev/null 2>&1"""
+            """curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim """
         )
         os.system(
-            "python3 -m venv ~/.neovim_env && . ~/.neovim_env/bin/activate && pip3 install -r ~/.config/nvim/requirements.txt > /dev/null 2>&1"
+            "python3 -m venv ~/.neovim_env && . ~/.neovim_env/bin/activate && pip3 install -r ~/.config/nvim/requirements.txt "
         )
         os.system("""
-                  nvim -c PlugInstall -c q -c q > /dev/null 2>&1
-                  nvim -c UpdateRemotePlugins -c q -c q > /dev/null 2>&1
+                  nvim -c PlugInstall -c q -c q 
+                  nvim -c UpdateRemotePlugins -c q -c q 
                   """)
     except KeyboardInterrupt:
         print("r u really want to exit")
@@ -44,39 +44,39 @@ def install_linux():
 
     try:
         os.system(
-            "sudo apt-get install neovim universal-ctags > /dev/null 2>&1")
-        os.system("sudo apt-get install nodejs > /dev/null 2>&1")
-        os.system("sudo apt-get install npm > /dev/null 2>&1")
-        os.system("sudo apt-get install xclip xsel yank > /dev/null 2>&1")
-        os.system("sudo npm install -g neovim > /dev/null 2>&1")
-        os.system("rm -rf ~/.config/nvim > /dev/null 2>&1")
+            "sudo apt-get install neovim universal-ctags ")
+        os.system("sudo apt-get install nodejs ")
+        os.system("sudo apt-get install npm ")
+        os.system("sudo apt-get install xclip xsel yank ")
+        os.system("sudo npm install -g neovim ")
+        os.system("rm -rf ~/.config/nvim ")
         os.system(
-            "git clone https://github.com/lambda-tech-myanmar/lambda-nvim.git  ~/.config/nvim > /dev/null 2>&1"
+            "git clone https://github.com/lambda-tech-myanmar/lambda-nvim.git  ~/.config/nvim "
         )
         os.system(
-            "python3 -m venv ~/.neovim_env && . ~/.neovim_env/bin/activate && pip3 install -r ~/.config/nvim/requirements.txt > /dev/null 2>&1"
+            "python3 -m venv ~/.neovim_env && . ~/.neovim_env/bin/activate && pip3 install -r ~/.config/nvim/requirements.txt "
         )
 
         os.system(
-            "pip3 install -r {}/requirements.txt > /dev/null 2>&1".format(
+            "pip3 install -r {}/requirements.txt ".format(
                 BASE_DIR))
         os.system("""
-                  mkdir ~/Desktop/linux_trainning > /dev/null 2>&1
-                  mkdir ~/Desktop/python_programming > /dev/null 2>&1
-                  mkdir ~/Desktop/python_exercise > /dev/null 2>&1
-                  mkdir ~/Desktop/linux_exercise > /dev/null 2>&1
-                  mkdir ~/Desktop/tool_testing > /dev/null 2>&1
+                  mkdir ~/Desktop/linux_trainning 
+                  mkdir ~/Desktop/python_programming 
+                  mkdir ~/Desktop/python_exercise 
+                  mkdir ~/Desktop/linux_exercise 
+                  mkdir ~/Desktop/tool_testing 
                   """)
         os.system(
-            """curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > /dev/null 2>&1"""
+            """curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim """
         )
         os.system(
-            "cd ~/ && python3 -m venv ~/.neovim_env && source ~/.neovim_env/bin/activate && pip3 install -r ~/.config/nvim/requirements.txt  > /dev/null 2>&1"
+            "cd ~/ && python3 -m venv ~/.neovim_env && source ~/.neovim_env/bin/activate && pip3 install -r ~/.config/nvim/requirements.txt  "
         )
         os.system("""
-                  nvim -c 'PlugInstall -c q -c q' > /dev/null 2>&1
-                  nvim -c 'UpdateRemotePlugins -c q -c q' > /dev/null 2>&1
-                  nvim -c 'CocInstall -sync coc-python coc-tabnine coc-html coc-explorer coc-dictionary coc-metals coc-pyright coc-vimlsp coc-word coc-git coc-snippets coc-json|q' > /dev/null 2>&1
+                  nvim -c 'PlugInstall -c q -c q' 
+                  nvim -c 'UpdateRemotePlugins -c q -c q' 
+                  nvim -c 'CocInstall -sync coc-python coc-tabnine coc-html coc-explorer coc-dictionary coc-metals coc-pyright coc-vimlsp coc-word coc-git coc-snippets coc-json|q' 
 
                   """)
         print("done! run :checkhealth in nvim")
