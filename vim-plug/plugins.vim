@@ -19,8 +19,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "
     Plug 'Vimjas/vim-python-pep8-indent'
     "Coompletions
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"    Plug 'neoclide/coc.nvim', {'branch/': 'release'}
+   " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'neoclide/coc.nvim', {'branch/': 'release'}
     "Syntax highlight
     Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
     "ALE
@@ -45,7 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "finding
     Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
     Plug 'junegunn/fzf.vim' " needed for previews
-"    Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+    Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
 
     let g:make = 'gmake'
@@ -64,14 +64,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     if v:version >= 704
       "" Snippets
-      "Plug 'SirVer/ultisnips'
+      Plug 'SirVer/ultisnips'
     endif
-    Plug 'MarcWeber/vim-addon-mw-utils'
-    Plug 'tomtom/tlib_vim'
-    Plug 'garbas/vim-snipmate'
+    "Plug 'MarcWeber/vim-addon-mw-utils'
+    "Plug 'tomtom/tlib_vim'
+    "Plug 'garbas/vim-snipmate'
 
   " Optional:
-    Plug 'honza/vim-snippets'
+    "Plug 'honza/vim-snippets'
     "Plug 'Shougo/neosnippet.vim'
    " Plug 'Shougo/neosnippet-snippets'
     "Plug 'honza/vim-snippets'
@@ -111,13 +111,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
 " python
 "" Python Bundle
-    Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'deoplete-plugins/deoplete-jedi'
-    if has('win32') || has('win64')
-        Plug 'tbodt/deoplete-tabnine', { 'do': 'powershell.exe .\install.ps1' }
-    else
-        Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-    endif
+    "Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
+    "Plug 'deoplete-plugins/deoplete-jedi'
+    "if has('win32') || has('win64')
+    "    Plug 'tbodt/deoplete-tabnine', { 'do': 'powershell.exe .\install.ps1' }
+    "else
+    "    Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+    "endif
     Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
     
     Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
@@ -151,5 +151,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
             \ '<Plug>MoveBlockRight',
             \ '<Plug>MoveBlockLeft']}
 "FADING PANE 
-     Plug 'TaDaa/vimade'
+    " Plug 'TaDaa/vimade'
 call plug#end()
